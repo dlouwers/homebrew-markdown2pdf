@@ -5,21 +5,21 @@
 class Markdown2pdf < Formula
   desc "Convert Markdown with code blocks, diagrams, and images to PDF"
   homepage "https://github.com/dlouwers/markdown2pdf"
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dlouwers/markdown2pdf/releases/download/v1.2.0/markdown2pdf_1.2.0_darwin_amd64.tar.gz"
-      sha256 "fc9aad466979cfe7498932c6b8c253f2034f255325ba99aca9446bc719b6c12f"
+      url "https://github.com/dlouwers/markdown2pdf/releases/download/v1.2.1/markdown2pdf_1.2.1_darwin_amd64.tar.gz"
+      sha256 "a459857e6d17cc2c564ef23ad0d408f6e8a3343e9f9eb39e09d68f5a0fa8b05a"
 
       define_method(:install) do
         bin.install "markdown2pdf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dlouwers/markdown2pdf/releases/download/v1.2.0/markdown2pdf_1.2.0_darwin_arm64.tar.gz"
-      sha256 "687aa5c79d305e635ffd8becf509b08b77aeaa78eaca635a58f202227bf3ff09"
+      url "https://github.com/dlouwers/markdown2pdf/releases/download/v1.2.1/markdown2pdf_1.2.1_darwin_arm64.tar.gz"
+      sha256 "e1d8c93413a15cb1aaa90fbf662eb6b0683de3381c3802f3f3b3994a5ad50e90"
 
       define_method(:install) do
         bin.install "markdown2pdf"
@@ -29,15 +29,15 @@ class Markdown2pdf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dlouwers/markdown2pdf/releases/download/v1.2.0/markdown2pdf_1.2.0_linux_amd64.tar.gz"
-      sha256 "9a0033d0d6a67a345e4e764c0094678ad324f09401a18cdcaa6663adabfa0279"
+      url "https://github.com/dlouwers/markdown2pdf/releases/download/v1.2.1/markdown2pdf_1.2.1_linux_amd64.tar.gz"
+      sha256 "0e3b17191613ad94e5180219186b4661c0c34c025cc0d1295782d8ca5d47a990"
       define_method(:install) do
         bin.install "markdown2pdf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dlouwers/markdown2pdf/releases/download/v1.2.0/markdown2pdf_1.2.0_linux_arm64.tar.gz"
-      sha256 "acf8bcfe0d744f101204c8cd19c4561f7c2c578e96202ea64be1de8a6a170ad4"
+      url "https://github.com/dlouwers/markdown2pdf/releases/download/v1.2.1/markdown2pdf_1.2.1_linux_arm64.tar.gz"
+      sha256 "ce090d4c17a99d370822037d93b53245edfc7a72c7401a09d11ab163ef685059"
       define_method(:install) do
         bin.install "markdown2pdf"
       end
